@@ -1,0 +1,9 @@
+{
+  "name": "remote-git-store",
+  "version": "1.0.0",
+  "description": "Remote git store",
+  "main": "lib",
+  "repository": "git@github.com:FujiHaruka/remote-git-store.git",
+  "author": "FujiHaruka",
+  "license": "MIT"
+}
