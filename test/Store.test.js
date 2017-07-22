@@ -47,6 +47,29 @@ describe('Store', function () {
     const exists = await store.existsRef(path)
     ok(!exists)
   })
+
+  it('private ref', async () => {
+    const store = new Store({ api, commonKey: 'password1234' })
+    const path = 'test/stores/secret'
+    const Book = await store.ref(path)
+    await Book.update({
+      author: 'foo'
+    })
+    {
+      let book = await Book.get()
+      ok(book)
+      equal(book.author, 'foo')
+    }
+
+    await Book.update({
+      author: 'bar'
+    })
+    {
+      let book = await Book.get()
+      ok(book)
+      equal(book.author, 'bar')
+    }
+  })
 })
 
 /* global describe, it */
