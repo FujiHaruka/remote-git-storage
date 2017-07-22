@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Remote git store",
   "main": "lib",
+  "scripts": {
+    "test": "pon test"
+  },
   "repository": "git@github.com:FujiHaruka/remote-git-store.git",
   "author": "FujiHaruka",
   "license": "MIT",

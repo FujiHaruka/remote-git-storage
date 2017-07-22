@@ -12,7 +12,7 @@ module.exports = pon({
   'env:test': env('test', TestEnv),
   'test': [
     'env:test',
-    mocha('test/Store.test.js')
+    mocha('test/*.test.js')
   ],
   't': 'test'
 })
