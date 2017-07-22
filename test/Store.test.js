@@ -1,6 +1,6 @@
 const { ok, equal } = require('assert')
 const Store = require('../lib/Store')
-const GithubApi = require('../lib/GithubApi')
+const GitHubApi = require('../lib/GitHubApi')
 const {
   GITHUB_OWNER,
   GITHUB_REPO,
@@ -12,7 +12,7 @@ describe('Store', function () {
   const owner = GITHUB_OWNER
   const repo = GITHUB_REPO
   const token = GITHUB_TOKEN
-  const api = new GithubApi({ owner, repo, token })
+  const api = new GitHubApi({ owner, repo, token })
 
   it('ref', async () => {
     const store = new Store({ api })
