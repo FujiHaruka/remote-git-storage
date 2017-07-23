@@ -18,20 +18,20 @@ describe('Store', function () {
     const store = new Store({ api })
     const path = 'test/stores/book'
     const Book = await store.ref(path)
-    await Book.update({
+    await Book.save({
       author: 'foo'
     })
     {
-      let book = await Book.get()
+      let book = await Book.load()
       ok(book)
       equal(book.author, 'foo')
     }
 
-    await Book.update({
+    await Book.save({
       author: 'bar'
     })
     {
-      let book = await Book.get()
+      let book = await Book.load()
       ok(book)
       equal(book.author, 'bar')
     }
@@ -52,20 +52,20 @@ describe('Store', function () {
     const store = new Store({ api, commonKey: 'password1234' })
     const path = 'test/stores/secret'
     const Book = await store.ref(path)
-    await Book.update({
+    await Book.save({
       author: 'foo'
     })
     {
-      let book = await Book.get()
+      let book = await Book.load()
       ok(book)
       equal(book.author, 'foo')
     }
 
-    await Book.update({
+    await Book.save({
       author: 'bar'
     })
     {
-      let book = await Book.get()
+      let book = await Book.load()
       ok(book)
       equal(book.author, 'bar')
     }
