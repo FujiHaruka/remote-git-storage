@@ -1,7 +1,7 @@
 {
   "name": "remote-git-storage",
   "version": "1.0.0",
-  "description": "Easy data storage using GitHub repository.",
+  "description": "Easy data storage using Git hosting service.",
   "main": "lib",
   "scripts": {
     "test": "pon test"
