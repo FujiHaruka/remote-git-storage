@@ -1,13 +1,16 @@
 {
   "name": "remote-git-store",
   "version": "1.0.0",
-  "description": "Remote git store",
+  "description": "Easy data store using GitHub repository.",
   "main": "lib",
   "scripts": {
     "test": "pon test"
   },
-  "repository": "git@github.com:FujiHaruka/remote-git-store.git",
-  "author": "FujiHaruka",
+  "repository": "FujiHaruka/remote-git-store",
+  "author": {
+    "name": "Fuji Haruka",
+    "url": "https://github.com/FujiHaruka"
+  },
   "license": "MIT",
   "dependencies": {
     "base-64": "^0.1.0",
@@ -18,7 +21,14 @@
     "utf8": "^2.1.2"
   },
   "devDependencies": {
+    "ape-tmpl": "^5.0.20",
+    "coz": "^6.0.20",
     "pon": "^4.0.3",
-    "pon-task-basic": "^2.1.1"
+    "pon-task-basic": "^2.1.1",
+    "pon-task-file-encrypt": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
