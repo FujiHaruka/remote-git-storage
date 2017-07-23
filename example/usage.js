@@ -1,7 +1,7 @@
-const RemoteStore = require('remote-git-store')
+const RemoteStorage = require('remote-git-storage')
 
 async function example () {
-  const store = RemoteStore({
+  const storage = RemoteStorage({
     owner: 'github-repository-owner',
     repo: 'github-repository-name',
     // Access token must not be known by others.
@@ -13,7 +13,7 @@ async function example () {
 
   // Ref has a unique path.
   // The path means a JSON file path in the repository.
-  const ToDo = await store.ref('users/1/todo')
+  const ToDo = await storage.ref('users/1/todo')
 
   // Save as a JSON file.
   // Supported type: string, number, boolean, null

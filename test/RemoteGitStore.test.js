@@ -1,4 +1,4 @@
-const RemoteGitStore = require('../lib')
+const RemoteGitStorage = require('../lib')
 const { ok } = require('assert')
 const {
   GITHUB_OWNER,
@@ -6,20 +6,20 @@ const {
   GITHUB_TOKEN
 } = process.env
 
-describe('RemoteGitStore', function () {
+describe('RemoteGitStorage', function () {
   this.timeout(30000)
   const owner = GITHUB_OWNER
   const repo = GITHUB_REPO
   const token = GITHUB_TOKEN
 
   it('do', async () => {
-    const store = RemoteGitStore({
+    const storage = RemoteGitStorage({
       owner,
       repo,
       token,
       commonKey: 'password1234'
     })
-    const Memo = await store.ref('test/memo')
+    const Memo = await storage.ref('test/memo')
     ok(Memo)
   })
 })

@@ -1,12 +1,12 @@
 {
-  "name": "remote-git-store",
+  "name": "remote-git-storage",
   "version": "1.0.0",
-  "description": "Easy data store using GitHub repository.",
+  "description": "Easy data storage using GitHub repository.",
   "main": "lib",
   "scripts": {
     "test": "pon test"
   },
-  "repository": "FujiHaruka/remote-git-store",
+  "repository": "FujiHaruka/remote-git-storage",
   "author": {
     "name": "Fuji Haruka",
     "url": "https://github.com/FujiHaruka"
