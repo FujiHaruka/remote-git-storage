@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Easy data storage using Git hosting service.",
   "main": "lib",
+  "browser": "shim",
   "scripts": {
     "test": "pon test"
   },
@@ -25,7 +26,8 @@
     "coz": "^6.0.20",
     "pon": "^4.0.3",
     "pon-task-basic": "^2.1.1",
-    "pon-task-file-encrypt": "^1.0.3"
+    "pon-task-file-encrypt": "^1.0.3",
+    "pon-task-web": "^3.0.3"
   },
   "engines": {
     "node": ">=8",

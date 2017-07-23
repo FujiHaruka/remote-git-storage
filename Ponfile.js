@@ -1,5 +1,6 @@
 const pon = require('pon')
 const { env, mocha, coz } = require('pon-task-basic')
+const { react } = require('pon-task-web')
 const { encrypt, decrypt } = require('pon-task-file-encrypt')
 
 let TestEnv = {}
@@ -24,6 +25,7 @@ module.exports = pon({
     env('test', TestEnv),
     mocha('test/*.test.js')
   ],
+  'shim': react('lib', 'shim'),
   'encrypt': encrypt('TestEnv.json', 'TestEnv.json.enc', REMOTE_GIT_STORE_SECRET),
 
   // ----------------
