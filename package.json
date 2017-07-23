@@ -1,6 +1,6 @@
 {
   "name": "remote-git-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy data storage using Git hosting service.",
   "main": "lib",
   "browser": "shim",
